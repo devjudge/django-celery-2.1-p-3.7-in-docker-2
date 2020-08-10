@@ -13,7 +13,7 @@ sleep 2
 mysql -u root --password=admin -e "create database db"
 
 # Start celery worker
-celery -A cjapp worker -c 4 -l info &
+celery -A cjapp worker -c 8 -l info &
 
 # Start server
 python manage.py migrate
