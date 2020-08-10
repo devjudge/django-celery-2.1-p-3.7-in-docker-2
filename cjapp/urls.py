@@ -20,6 +20,5 @@ from restapi.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'sample', sample_celery),
     url(r'', index),
 ]
